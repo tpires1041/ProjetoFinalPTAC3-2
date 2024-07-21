@@ -11,7 +11,6 @@ export default function Main() {
 
   const [listProduct, setListProduct] = useState([]);
   const [listComplete, setListComplete] = useState([]);
-  const [textSearch, setTextSearch] = useState("");
   const [isError, setIsError] = useState(false);
 
   useEffect(() => {
