@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { NextResponse } from "next/server";*
+import { NextResponse } from "next/server";
 
 export default async function Product({params}){
 

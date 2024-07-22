@@ -6,7 +6,6 @@ import styles from "../styles/main.module.css";
 import Link from "next/link";
 
 
-
 export default function Main() {
 
   const [listProduct, setListProduct] = useState([]);
@@ -16,7 +15,7 @@ export default function Main() {
   useEffect(() => {
     const getProduct = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/", {
+        const response = await fetch("http://localhost:3000/api", {
           cache: "no-cache",
         });
 
@@ -61,10 +60,9 @@ export default function Main() {
 
             <p>{aeronaves.preco}</p>
 
-            <Link href={"/aeronaves/" + aeronaves.id}>
+            <Link href={"/product/" + aeronaves.id}>
               <button>Ver Mais</button>
             </Link>
-
           </div>
         ))}
       </main>

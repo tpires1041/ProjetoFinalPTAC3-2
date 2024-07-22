@@ -22,6 +22,11 @@
       "static/chunks/main-app.js",
       "static/css/app/_not-found/page.css",
       "static/chunks/app/_not-found/page.js"
+    ],
+    "/product/[id]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/product/[id]/page.js"
     ]
   }
 }
