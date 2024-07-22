@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Azul */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    border-radius: 15%; /* Menos arredondada */
+    object-fit: cover;
+    width: 80px; /* Aumentando o tamanho da logo */
+    height: 80px; /* Aumentando o tamanho da logo */
+}
+
+.frase-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.frase {
+    font-size: 1.2em;
+    color: #fff; /* Branco */
+    font-family: 'Arial', sans-serif; /* Fonte diferente */
+    margin: 0;
+}
