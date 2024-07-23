@@ -1,8 +1,8 @@
 import Header from "./components/Header";
 
 export const metadata = {
-  title: "Meu Shop.com",
-  description: "E-commerce",
+  title: "Paper Plane.com",
+  description: "Classificados de aeronaves",
 };
 
 export default function RootLayout({ children }) {

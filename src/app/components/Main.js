@@ -12,6 +12,7 @@ export default function Main() {
 
   const [listProduct, setListProduct] = useState([]);
   const [listComplete, setListComplete] = useState([]);
+  const [textSearch, setTextSearch] = useState("");
   const [isError, setIsError] = useState(false);
 
   useEffect(() => {
@@ -33,6 +34,29 @@ export default function Main() {
     getProduct();
   }, []);
 
+  const orderAz = () => {
+    const listAux = [...listProduct].sort((a, b) => a.modelo.localeCompare(b.modelo));
+
+    setListProduct(listAux);
+  }
+
+  const orderZa = () => {
+    let listAux = [...listProduct].sort((a, b) => a.modelo.localeCompare(b.modelo));
+    listAux = listAux.reverse();
+
+    setListProduct(listAux);
+  }
+
+  const search = (text) => {
+    setTextSearch(text);
+
+    if (text.trim() == "") {
+      setListProduct(listComplete);
+      return
+    }
+    const newList = listProduct.filter((product) => product.modelo.toUpperCase().includes(textSearch.toUpperCase().trim()));
+    setListProduct(newList);
+  }
 
   if (isError == true){
     return <ErrorFetch/>
@@ -48,6 +72,16 @@ export default function Main() {
 
   return (
     <>
+    <div className={styles.barra}>
+    <input type="text" value={textSearch} placeholder="Pesquise um produto" onChange={(event) => search(event.target.value)} />
+    </div>
+    <div className={styles.filters}>
+        <div>
+          <button onClick={orderAz}>A-Z</button>
+          <button onClick={orderZa}>Z-A</button>
+        </div>
+      </div>
+
       <main className={styles.main}>
         {listProduct.map((aeronaves) => (
           <div className={styles.card} key={aeronaves.id}>
