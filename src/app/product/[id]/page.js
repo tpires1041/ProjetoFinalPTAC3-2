@@ -22,18 +22,21 @@ export default async function Product({ params }) {
                     />
                 </div>
                 <div className={styles.details}>
-                    <p className={styles.modelo}>{data.modelo}</p>
-                    <p className={styles.categoria}>{data.categoria}</p>
+                    <p className={styles.modelo}>Modelo: {data.modelo}</p>
+                    <p className={styles.categoria}>Categoria: {data.categoria}</p>
                     <p className={styles.description}>
-                        {data.fabricante} - {data.ano}
+                        Fabricante: {data.fabricante}
                     </p>
-                    <p className={styles.preco}>{data.preco}</p>
-                    <p className={styles.horasTotais}>{data.horasTotais}</p>
-                    <p className={styles.assentos}>{data.assentos}</p>
-                    <p className={styles.tipoNegocio}>{data.tipoNegocio}</p>
-                    <p className={styles.condicaoDeUso}>{data.condicaoDeUso}</p>
-                    <p className={styles.contato}>{data.contato}</p>
-                    <p className={styles.localizacao}>{data.localizacao}</p>
+                    <p className={styles.description}>
+                        Ano: {data.ano}
+                    </p>
+                    <p className={styles.preco}>Preço: {data.preco}</p>
+                    <p className={styles.horasTotais}>Horas totais: {data.horasTotais}</p>
+                    <p className={styles.assentos}>Assentos: {data.assentos}</p>
+                    <p className={styles.tipoNegocio}>Tipo de negócio: {data.tipoNegocio}</p>
+                    <p className={styles.condicaoDeUso}>Condição de uso: {data.condicaoDeUso}</p>
+                    <p className={styles.contato}>Contato do vendedor: {data.contato}</p>
+                    <p className={styles.localizacao}>Localização: {data.localizacao}</p>
                 </div>
             </main>
         </div>

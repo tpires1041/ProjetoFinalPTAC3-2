@@ -146,7 +146,7 @@ export const listaDeAeronaves = [
         fabricante: "EMBRAER",
         ano: 2011,
         categoria: "Jatos Executivos",
-        preco: "R$ 9.607.500 * por cota",
+        preco: "R$ 9.607.500 (por cota)",
         horasTotais: "10h",
         assentos: "2 + 7",
         tipoNegocio: "Propriedade Compartilhada",
