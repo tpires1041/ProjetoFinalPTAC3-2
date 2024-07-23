@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react";
+import Carregando from './Carregando';
 import Image from "next/image";
 import styles from "../styles/main.module.css";
 import Link from "next/link";
@@ -39,7 +40,7 @@ export default function Main() {
   if (listComplete[0] == null) {
     return (
       <main className={styles.main}>
-        <p>Carregando</p>
+        <Carregando />
       </main>
     )
   }
