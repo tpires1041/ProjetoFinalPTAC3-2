@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Azul, mesma cor do header */
+    width: 100%;
+    box-sizing: border-box;
+    position: relative; /* Removendo a fixação */
+  }
+  
+  .footer img {
+    border-radius: 15%; /* Menos arredondada, igual ao header */
+    object-fit: cover;
+    width: 80px; /* Aumentando o tamanho da logo */
+    height: 80px; /* Aumentando o tamanho da logo */
+  }
+  
+  .footer p {
+    font-size: 14px;
+    color: #fff; /* Branco, igual ao texto do header */
+  }
+  

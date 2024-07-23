@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Header from "../../components/Header";
 import styles from "../../styles/aeronave.module.css";
 import { NextResponse } from "next/server";
 
@@ -11,7 +10,6 @@ export default async function Product({ params }) {
 
     return (
         <div>
-            <Header />
             <main className={styles.main}>
                 <div className={styles.imageContainer}>
                 <Image
