@@ -10,7 +10,7 @@ export default function Footer() {
                         height={30}
                         alt={"Imagem da logo"}
                     />
-        <p>Ajudando negócios serem fechados desde 2012</p>
+        <p>Paper Plane, ajudando negócios a serem fechados desde 2012</p>
     </footer>
     )
 }
