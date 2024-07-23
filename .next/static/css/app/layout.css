@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 15px 20px; /* Aumentando o padding para aumentar a altura */
     background-color: #007BFF; /* Azul */
     width: 100%;
     position: fixed;
@@ -13,11 +13,8 @@
     left: 0;
     z-index: 1000;
     box-sizing: border-box;
-}
-
-.header_logo__gD3Ck {
-    display: flex;
-    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Nova fonte */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
 }
 
 .header_logo__gD3Ck img {
@@ -26,6 +23,7 @@
     width: 80px; /* Aumentando o tamanho da logo */
     height: 80px; /* Aumentando o tamanho da logo */
 }
+
 
 .header_frase-container__QUxjF {
     flex: 1 1;
@@ -36,10 +34,11 @@
 }
 
 .header_frase__e8cRX {
-    font-size: 1.2em;
+    font-size: 1.4em; /* Aumentando um pouco o tamanho do texto */
     color: #fff; /* Branco */
-    font-family: 'Arial', sans-serif; /* Fonte diferente */
     margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra no texto para destaque */
+    font-weight: 800;
 }
 
 /*!****************************************************************************************************************************************************************************************************************************************************************************!*\
@@ -53,7 +52,9 @@
     background-color: #007BFF; /* Azul, mesma cor do header */
     width: 100%;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: relative; /* Removendo a fixação */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
   }
   
   .footer_footer__17AzZ img {
@@ -64,7 +65,10 @@
   }
   
   .footer_footer__17AzZ p {
-    font-size: 14px;
-    color: #fff; /* Branco, igual ao texto do header */
+    font-size: 1.4em; /* Aumentando um pouco o tamanho do texto */
+    color: #fff; /* Branco */
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra no texto para destaque */
+    font-weight: 800;
   }
   
