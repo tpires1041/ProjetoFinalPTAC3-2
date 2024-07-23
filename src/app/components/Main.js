@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Carregando from './Carregando';
 import Image from "next/image";
 import styles from "../styles/main.module.css";
+import ErrorFetch from "./ErrorFetch";
 import Link from "next/link";
 
 
@@ -34,7 +35,7 @@ export default function Main() {
 
 
   if (isError == true){
-    return <p>Deu erro</p>
+    return <ErrorFetch/>
   }
 
   if (listComplete[0] == null) {
